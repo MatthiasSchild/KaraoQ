@@ -1,0 +1,17 @@
+node_modules
+npm-debug.log
+.nuxt
+.output
+.git
+.gitignore
+README.md
+.env
+.env.local
+.env.production
+.env.staging
+coverage
+.nyc_output
+.cache
+dist
+.DS_Store
+*.log

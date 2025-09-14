@@ -1,0 +1,16 @@
+<template>
+    <div class="Center">
+        <slot />
+    </div>
+</template>
+
+<style scoped lang="scss">
+.Center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    width: 100%;
+}
+</style>
