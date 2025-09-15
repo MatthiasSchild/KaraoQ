@@ -29,23 +29,21 @@ const onSubmit = async (values: { name: string }) => {
 
 <template>
   <Center>
-    <Column>
-      <VCard class="pa-6" max-width="400">
-        <VCardTitle class="text-h4 text-center mb-6 text-primary">
-          Start hosting a party!
-        </VCardTitle>
-        
-        <ClientOnly>
-          <template #default>
-            <PartyForm @submit="onSubmit" />
-          </template>
-          <template #fallback>
-            <div class="text-center text-body-2 text-medium-emphasis">
-              Loading party form...
-            </div>
-          </template>
-        </ClientOnly>
-      </VCard>
-    </Column>
+    <VCard class="pa-6" width="100%" max-width="800">
+      <VCardTitle class="text-h4 text-center mb-6 text-primary">
+        Start hosting a party!
+      </VCardTitle>
+      
+      <ClientOnly>
+        <template #default>
+          <PartyForm @submit="onSubmit" />
+        </template>
+        <template #fallback>
+          <div class="text-center text-body-2 text-medium-emphasis">
+            Loading party form...
+          </div>
+        </template>
+      </ClientOnly>
+    </VCard>
   </Center>
 </template>
